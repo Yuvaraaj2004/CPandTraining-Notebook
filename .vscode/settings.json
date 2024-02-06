@@ -1,0 +1,8 @@
+{
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.smoothScrolling": false,
+    "editor.stickyScroll.scrollWithEditor": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "editor.formatOnType": true
+}

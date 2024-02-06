@@ -1,0 +1,205 @@
+import requests
+
+l = '''Design HashMap
+Valid Sudoku
+Group Anagrams
+Maximal Rectangle
+Top K Frequent Elements
+Insert Delete GetRandom O(1)
+First Unique Character in a String
+Find All Anagrams in a String
+Sort Characters By Frequency
+Contiguous Array
+Subarray Sum Equals K
+Longest Duplicate Substring
+Longest Substring Without Repeating Characters
+
+Merge k Sorted Lists
+Sliding Window Maximum
+Find Median from Data Stream
+Top K Frequent Elements
+Sort Characters By Frequency
+Kth Largest Element in a Stream
+Process Tasks Using Servers
+
+N-Queens
+N-Queens II
+Generate Parentheses
+Letter Combinations of a Phone Number
+Word Search
+Word Search II
+Word Break II
+Remove Invalid Parentheses
+Sudoku Solver
+Permutations
+Combination Sum
+
+
+Lowest Common Ancestor of a Binary Tree
+Binary Tree Maximum Path Sum
+Binary Tree Right Side View
+Serialize and Deserialize Binary Tree
+All Nodes Distance K in Binary Tree
+Count Good Nodes in Binary Tree
+Lowest Common Ancestor of a Binary Tree III
+Validate Binary Search Tree
+Binary Tree Vertical Order Traversal
+Diameter of Binary Tree
+Binary Tree Zigzag Level Order Traversal
+Invert Binary Tree
+Balance a Binary Search Tree
+Binary Tree Level Order Traversal
+Flatten Binary Tree to Linked List
+Construct Binary Tree from Preorder and Inorder Traversal
+Cousins in Binary Tree
+Construct Binary Search Tree from Preorder Traversal
+Inorder Successor in BST
+
+
+Range sum query
+Range max/min query
+Range XOR query
+Range GCD query
+Range LCM query
+Count of number of Zeroes in a given range
+Find Kth zero in array (segment tree)
+
+Implement Huffman algo (Use Editorial and our class lecture)
+Meeting Rooms II
+Employee Free Time
+Task Scheduler
+Reorganize String
+Minimum Number of Taps to Open to Water a Garden
+Gas Station
+Minimum Deletion Cost to Avoid Repeating Letters
+Best Time to Buy and Sell Stock II
+Jump Game II
+Maximum Number of Events That Can Be Attended
+Partition Labels
+Two City Scheduling
+Jump Game
+
+
+Implement Trie (Prefix Tree)
+Implement Trie II (Prefix Tree)
+Design Add and Search Words Data Structure
+Count number of strings with given prefix
+Maximum XOR of 2 numbers in an array
+Word Break
+Word Break II
+
+
+Course Schedule II
+Course Schedule
+
+Evaluate Division
+Clone Graph
+Is Graph Bipartite?
+Possible Bipartition
+All Paths From Source to Target
+Path With Minimum Effort
+Graph Valid Tree
+Connecting Cities With Minimum Cost
+Regions Cut By Slashes
+Network Delay Time
+Shortest Path to Get Food
+Path With Maximum Minimum Value
+Shortest Path in a Hidden Grid
+Minimum Path Cost in a Hidden Grid
+Path with Maximum Probability
+Parallel Courses
+Find the City With the Smallest Number of Neighbors at a Threshold Distance
+Course Schedule IV
+Cheapest Flights Within K Stops
+Min Cost to Connect All Points
+Remove Max Number of Edges to Keep Graph Fully Traversable
+Critical Connections in a Network
+Number of Provinces
+Maximum Number of Accepted Invitations
+Minimum Degree of a Connected Trio in a Graph
+Detonate the Maximum Bombs
+
+Egg Drop With 2 Eggs and N Floors
+Super Egg Drop
+Burst Balloons
+Longest Common Subsequence
+Shortest Common Supersequence
+Longest Palindromic Subsequence
+Maximum Length of Repeated Subarray
+Delete Operation for Two Strings
+Partition Equal Subset Sum
+Ones and Zeroes
+Target Sum
+Coin Change
+Coin Change 2
+Longest Palindromic Substring
+Palindromic Substrings
+Longest Increasing Subsequence
+Number of Longest Increasing Subsequence
+Minimum Operations to Make the Array K-Increasing
+Edit Distance
+One Edit Distance
+Minimum Path Sum
+Unique Paths
+Unique Paths II
+Maximal Square
+Dungeon Game
+Partition to K Equal Sum Subsets
+Matchsticks to Square
+Number of Ways to Wear Different Hats to Each Other'''
+def get_leetcode_problem_id(problem_name):
+    # LeetCode API endpoint for problem list
+    api_url = "https://leetcode.com/api/problems/all/"
+
+    # Make a GET request to the LeetCode API
+    response = requests.get(api_url)
+
+    if response.status_code == 200:
+        # Parse the response JSON
+        problem_data = response.json()
+
+        # Search for the problem by name
+        for problem in problem_data['stat_status_pairs']:
+            if problem['stat']['question__title'] == problem_name:
+                return problem['stat']['question_id']
+
+        print(f"Problem '{problem_name}' not found on LeetCode.")
+        return None
+    else:
+        print(f"Failed to fetch problem list. Status code: {
+              response.status_code}")
+        return None
+
+
+def check_leetcode_status(problem_id, username):
+    # LeetCode API endpoint for submissions status
+    api_url = f"https://leetcode.com/api/submissions/{problem_id}/?format=json"
+
+    # Make a GET request to the LeetCode API
+    response = requests.get(api_url)
+
+    if response.status_code == 200:
+        # Parse the response JSON
+        submission_data = response.json()
+
+        # Check if the user has a submission for the problem
+        for submission in submission_data['submissions_dump']:
+            if submission['status_display'] == 'Accepted' and submission['username'] == username:
+                print(f"Problem {problem_id}: Accepted")
+                return
+
+        print(f"Problem {problem_id}: Not Accepted")
+    else:
+        print(f"Failed to fetch data for Problem {
+              problem_id}. Status code: {response.status_code}")
+
+
+# Example usage:
+# Replace 'YOUR_LEETCODE_USERNAME' with your LeetCode username
+username = '_Cypher_0101'
+
+# Replace '1', '2', '3', etc. with the LeetCode problem IDs you want to check
+
+print(l.split('\n'))
+for problem_id in [v for i in l.split('\n') if (v:=get_leetcode_problem_id(i))]:
+    check_leetcode_status(problem_id, username)
