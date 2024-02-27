@@ -1,0 +1,46 @@
+
+import sys
+
+# the setrecursionlimit function is
+# used to modify the default recursion
+# limit set by python. Using this,
+# we can increase the recursion limit
+# to satisfy our needs
+
+# sys.setrecursionlimit(10**6)
+
+t = int(input())
+for i in range(t):
+
+    def dp(ind, cur):
+        # print(ind,cur,s[ind],adj[ind])
+        if len(adj[ind]) == 0:
+            return 0
+        elif d[ind].get(cur, None) != None:
+            return d[ind][cur]
+        else:
+            ans = 0
+            for i in adj[ind]:
+                if s[i] == cur:
+                    ans += dp(i, cur)
+                elif s[i] == 2:
+                    ans += min(dp(i, cur), dp(i, int(not cur))+1)
+                else:
+                    ans += 1+dp(i, int(not cur))
+            d[ind][cur] = ans
+            return ans
+    n = int(input())
+    adj = [[] for i in range(n)]
+    d = [{} for i in range(n)]
+    ctr = 1
+    for i in list(map(int, input().split())):
+        adj[i-1].append(ctr)
+        ctr += 1
+    s = [(0 if i == 'P' else (1 if i == 'S' else 2)) for i in input()]
+    # print(n,adj,s)
+    print(min(
+        (dp(0, 0) if s[0] in {0, 2} else float('inf')),
+        (dp(0, 1) if s[0] in {1, 2} else float('inf'))
+    )
+    )
+    # print(d)

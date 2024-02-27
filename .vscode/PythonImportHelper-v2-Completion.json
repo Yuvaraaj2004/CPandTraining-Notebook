@@ -1,5 +1,134 @@
 [
     {
+        "label": "cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "ceil",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "ceil",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "ceil",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "floor",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sqrt",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "ceil",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "floor",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "DefaultDict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "defaultdict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
         "label": "pandas",
         "kind": 6,
         "isExtraImport": true,
@@ -204,44 +333,28 @@
         "documentation": {}
     },
     {
-        "label": "math",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "math",
-        "description": "math",
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "ceil",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "floor",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "defaultdict",
-        "importPath": "collections",
-        "description": "collections",
-        "isExtraImport": true,
-        "detail": "collections",
-        "documentation": {}
-    },
-    {
         "label": "mkdir",
         "importPath": "os",
         "description": "os",
         "isExtraImport": true,
         "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Queue",
+        "importPath": "queue",
+        "description": "queue",
+        "isExtraImport": true,
+        "detail": "queue",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
         "documentation": {}
     },
     {
@@ -251,6 +364,199 @@
         "importPath": "warnings",
         "description": "warnings",
         "detail": "warnings",
+        "documentation": {}
+    },
+    {
+        "label": "Find",
+        "kind": 2,
+        "importPath": "CodeForces.cfs.BinarySearch",
+        "description": "CodeForces.cfs.BinarySearch",
+        "peekOfCode": "def Find(q):\n    l, r = 0, n-1\n    # print(q,end=' ')\n    while l <= r:\n        mid = (l+r)//2\n        # print(l,r,arr[mid])\n        if arr[mid] == q:\n            # print(True)\n            return True\n        elif arr[mid] < q:",
+        "detail": "CodeForces.cfs.BinarySearch",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "CodeForces.cfs.BinarySearch",
+        "description": "CodeForces.cfs.BinarySearch",
+        "peekOfCode": "arr = list(map(int, input().split()))\n@cache\ndef Find(q):\n    l, r = 0, n-1\n    # print(q,end=' ')\n    while l <= r:\n        mid = (l+r)//2\n        # print(l,r,arr[mid])\n        if arr[mid] == q:\n            # print(True)",
+        "detail": "CodeForces.cfs.BinarySearch",
+        "documentation": {}
+    },
+    {
+        "label": "Find",
+        "kind": 2,
+        "importPath": "CodeForces.cfs.LowerBound",
+        "description": "CodeForces.cfs.LowerBound",
+        "peekOfCode": "def Find(q):\n    l, r = 0, n-1\n    # print(q,end=' ')\n    while l <= r:\n        mid = (l+r)//2\n        # print(l,r,arr[mid])\n        if arr[mid] < q:\n            l = mid+1\n        else:\n            r = mid-1",
+        "detail": "CodeForces.cfs.LowerBound",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "CodeForces.cfs.LowerBound",
+        "description": "CodeForces.cfs.LowerBound",
+        "peekOfCode": "arr = list(map(int, input().split()))\ndef Find(q):\n    l, r = 0, n-1\n    # print(q,end=' ')\n    while l <= r:\n        mid = (l+r)//2\n        # print(l,r,arr[mid])\n        if arr[mid] < q:\n            l = mid+1\n        else:",
+        "detail": "CodeForces.cfs.LowerBound",
+        "documentation": {}
+    },
+    {
+        "label": "upper",
+        "kind": 2,
+        "importPath": "CodeForces.cfs.range",
+        "description": "CodeForces.cfs.range",
+        "peekOfCode": "def upper(q):\n    l, r = 0, n-1\n    while l <= r:\n        mid = (l+r)//2\n        # print(l,r,arr[mid])\n        if arr[mid] <= q:\n            l = mid+1\n        else:\n            r = mid-1\n    # print(False,l,r)",
+        "detail": "CodeForces.cfs.range",
+        "documentation": {}
+    },
+    {
+        "label": "lower",
+        "kind": 2,
+        "importPath": "CodeForces.cfs.range",
+        "description": "CodeForces.cfs.range",
+        "peekOfCode": "def lower(q):\n    l, r = 0, n-1\n    while l <= r:\n        mid = (l+r)//2\n        # print(l,r,arr[mid])\n        if arr[mid] < q:\n            l = mid+1\n        else:\n            r = mid-1\n    # print(False,l,r)",
+        "detail": "CodeForces.cfs.range",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 2,
+        "importPath": "CodeForces.cfs.range",
+        "description": "CodeForces.cfs.range",
+        "peekOfCode": "def f(x,y):\n    return upper(y)-lower(x)\nprint(*[f(*list(map(int, input().split()))) for i in range(int(input()))])",
+        "detail": "CodeForces.cfs.range",
+        "documentation": {}
+    },
+    {
+        "label": "edges",
+        "kind": 5,
+        "importPath": "CodeForces.cfs.Shortestpath",
+        "description": "CodeForces.cfs.Shortestpath",
+        "peekOfCode": "edges = int(input())\nn = int(input())\nadjM = [[0]*n for i in range(n)]\nadj = [[] for i in range(n)]\nfor i in range(edges):\n    x, y, z = map(int, input().split())\n    adj[x].append((y, z))\n    adjM[x][y] = z\nfor i in adjM:\n    print(i)",
+        "detail": "CodeForces.cfs.Shortestpath",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "CodeForces.cfs.Shortestpath",
+        "description": "CodeForces.cfs.Shortestpath",
+        "peekOfCode": "n = int(input())\nadjM = [[0]*n for i in range(n)]\nadj = [[] for i in range(n)]\nfor i in range(edges):\n    x, y, z = map(int, input().split())\n    adj[x].append((y, z))\n    adjM[x][y] = z\nfor i in adjM:\n    print(i)\nprint()",
+        "detail": "CodeForces.cfs.Shortestpath",
+        "documentation": {}
+    },
+    {
+        "label": "adjM",
+        "kind": 5,
+        "importPath": "CodeForces.cfs.Shortestpath",
+        "description": "CodeForces.cfs.Shortestpath",
+        "peekOfCode": "adjM = [[0]*n for i in range(n)]\nadj = [[] for i in range(n)]\nfor i in range(edges):\n    x, y, z = map(int, input().split())\n    adj[x].append((y, z))\n    adjM[x][y] = z\nfor i in adjM:\n    print(i)\nprint()\nans = 0",
+        "detail": "CodeForces.cfs.Shortestpath",
+        "documentation": {}
+    },
+    {
+        "label": "adj",
+        "kind": 5,
+        "importPath": "CodeForces.cfs.Shortestpath",
+        "description": "CodeForces.cfs.Shortestpath",
+        "peekOfCode": "adj = [[] for i in range(n)]\nfor i in range(edges):\n    x, y, z = map(int, input().split())\n    adj[x].append((y, z))\n    adjM[x][y] = z\nfor i in adjM:\n    print(i)\nprint()\nans = 0\nwhile True:",
+        "detail": "CodeForces.cfs.Shortestpath",
+        "documentation": {}
+    },
+    {
+        "label": "ans",
+        "kind": 5,
+        "importPath": "CodeForces.cfs.Shortestpath",
+        "description": "CodeForces.cfs.Shortestpath",
+        "peekOfCode": "ans = 0\nwhile True:\n    visited = [False]*n\n    par = [-1]*n\n    q = [0]\n    while q:\n        node = q.pop()\n        for ind, i in enumerate(adjM[node]):\n            if not visited[ind] and i > 0:\n                par[ind] = node",
+        "detail": "CodeForces.cfs.Shortestpath",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "CodeForces.cfs.SumOfDistance",
+        "description": "CodeForces.cfs.SumOfDistance",
+        "peekOfCode": "class Solution:\n    def sumOfDistancesInTree(self, n: int, edges: List[List[int]]) -> List[int]:\n        par=[-1 for i in range(n)]\n        ns=[1 for i in range(n)]\n        dist=[0 for i in range(n)]\n        adj=[set() for i in range(n)]\n        d=DefaultDict(dict)\n        for x,y in edges:\n            par[y]=x\n            adj[x].add(y)",
+        "detail": "CodeForces.cfs.SumOfDistance",
+        "documentation": {}
+    },
+    {
+        "label": "Solution().sumOfDistancesInTree(n",
+        "kind": 5,
+        "importPath": "CodeForces.cfs.SumOfDistance",
+        "description": "CodeForces.cfs.SumOfDistance",
+        "peekOfCode": "Solution().sumOfDistancesInTree(n = 6, edges = [[0, 1],[0,2],[2,3],[2,4],[2,5]])",
+        "detail": "CodeForces.cfs.SumOfDistance",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "CodeForces.Contest927.1923A",
+        "description": "CodeForces.Contest927.1923A",
+        "peekOfCode": "t = int(input())\nfor t in range(t):\n    n = int(input())\n    l = list(map(int, input().split()))\n    i, j = 0, n-1\n    while i < len(l) and l[i] == 0:\n        i += 1\n    while i < len(l) and l[i] == 1:\n        i += 1\n    print(sum(l[i:]))",
+        "detail": "CodeForces.Contest927.1923A",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "CodeForces.Contest927.1923B",
+        "description": "CodeForces.Contest927.1923B",
+        "peekOfCode": "t = int(input())\nfor t in range(t):\n    n, k = map(int, input().split())\n    health=list(map(int,input))",
+        "detail": "CodeForces.Contest927.1923B",
+        "documentation": {}
+    },
+    {
+        "label": {
+            "name": "",
+            "kind": 2,
+            "peekOfCode": "def  Check(mid):\n    return sum(i//mid for i in a)>=k\nl,r=1,sum(a)\nwhile r-l>1e-6:\n    mid=(l+r)/2\n    # print(l, r, mid, (v := Check(mid)))\n    if (v := Check(mid)):\n        l=mid\n    else:\n        r=mid"
+        },
+        "kind": 2,
+        "importPath": "CodeForces.Contest927.283932B",
+        "description": "CodeForces.Contest927.283932B",
+        "peekOfCode": "def  Check(mid):\n    return sum(i//mid for i in a)>=k\nl,r=1,sum(a)\nwhile r-l>1e-6:\n    mid=(l+r)/2\n    # print(l, r, mid, (v := Check(mid)))\n    if (v := Check(mid)):\n        l=mid\n    else:\n        r=mid",
+        "detail": "CodeForces.Contest927.283932B",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "CodeForces.Contest927.Punched Cards",
+        "description": "CodeForces.Contest927.Punched Cards",
+        "peekOfCode": "t = int(input())\nfor t in range(1, t+1):\n    print(f\"Case #{t}:\")\n    a,b=map(int,input().split())\n    for i in range(2*a+1):\n        s=''\n        if i==0 or i==1:\n            s+='..'\n        s+=('+-' if i%2==0 else '|.')*(b-len(s)//2)+('+' if i%2==0 else '|')\n        print(s)",
+        "detail": "CodeForces.Contest927.Punched Cards",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 2,
+        "importPath": "CodeForces.Round928.Vlad and a Sum of Sum of Digits",
+        "description": "CodeForces.Round928.Vlad and a Sum of Sum of Digits",
+        "peekOfCode": "def f(n):\n    res=0\n    while n:\n        res+=n%10\n        n//=10\n    return res\nl=[0]*((10**5)*2+1)\nfor i in range(len(l)):\n    l[i]=l[i-1]+f(i)\nfor i in range(t):",
+        "detail": "CodeForces.Round928.Vlad and a Sum of Sum of Digits",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "CodeForces.Round928.Vlad and Division",
+        "description": "CodeForces.Round928.Vlad and Division",
+        "peekOfCode": "t = int(input())\nfor i in range(t):\n    n=int(input())\n    ans=0\n    l,visited=Counter(map(int,input().split())),set()\n    for i in l:\n        if i in visited:continue\n        v=i^mx\n        # print(i,v)\n        if l.get(v,0):",
+        "detail": "CodeForces.Round928.Vlad and Division",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "CodeForces.Round928.Vlad and Shapes",
+        "description": "CodeForces.Round928.Vlad and Shapes",
+        "peekOfCode": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    s = [Counter(input()).get('1', 0) for i in range(n)]\n    for i in range(1, n):\n        if s[i] and s[i] == s[i-1]:\n            print('SQUARE')\n            break\n        elif s[i] and s[i-1] and abs(s[i]-s[i-1]) == 2:\n            print('TRIANGLE')",
+        "detail": "CodeForces.Round928.Vlad and Shapes",
         "documentation": {}
     },
     {
@@ -845,6 +1151,51 @@
         "description": "Techdose.Fold",
         "peekOfCode": "files = ['''Implement Trie (Prefix Tree)\nImplement Trie II (Prefix Tree)\nDesign Add and Search Words Data Structure\nCount number of strings with given prefix\nMaximum XOR of 2 numbers in an array\nWord Break\nWord Break II'''.split('\\n'), '''\nCourse Schedule II\nCourse Schedule\nEvaluate Division",
         "detail": "Techdose.Fold",
+        "documentation": {}
+    },
+    {
+        "label": "HashMap",
+        "kind": 6,
+        "importPath": "Training.HashMap",
+        "description": "Training.HashMap",
+        "peekOfCode": "class HashMap:\n    def __init__(self,size,mod=15):\n        self.size=size\n        self.l=[None for i in range(size)]\n        self.mod=mod\n    def add(self,value):\n        ind=value%self.mod\n        while self.l[ind]!=None:\n            ind+=1\n        self.l[ind]=value",
+        "detail": "Training.HashMap",
+        "documentation": {}
+    },
+    {
+        "label": "Stack",
+        "kind": 6,
+        "importPath": "Training.StackImplement",
+        "description": "Training.StackImplement",
+        "peekOfCode": "class Stack:\n    def __init__(self, size=float('inf')) -> None:\n        self.l = []\n        self.size = 0\n        self.limit = size\n    def pop(self):\n        if self.IsEmpty():\n            print(\"UnderFlow\")\n        self.size -= 1\n        return self.l.pop()",
+        "detail": "Training.StackImplement",
+        "documentation": {}
+    },
+    {
+        "label": "queue",
+        "kind": 6,
+        "importPath": "Training.StackImplement",
+        "description": "Training.StackImplement",
+        "peekOfCode": "class queue:\n    def __init__(self, size=float('inf')) -> None:\n        self.l = []\n        self.size = 0\n        self.limit = size\n    def dequeue(self):\n        if self.IsEmpty():\n            print(\"UnderFlow\")\n        self.size -= 1\n        return self.l.pop(0)",
+        "detail": "Training.StackImplement",
+        "documentation": {}
+    },
+    {
+        "label": "deque",
+        "kind": 6,
+        "importPath": "Training.StackImplement",
+        "description": "Training.StackImplement",
+        "peekOfCode": "class deque(queue):\n    def popleft(self):\n        if super().IsEmpty():\n            print(\"UnderFlow\")\n        self.size -= 1\n        return self.l.pop()\nq = deque(size=10)\nfor i in range(11):\n    q.enqueue(random.random())\n    print(q)",
+        "detail": "Training.StackImplement",
+        "documentation": {}
+    },
+    {
+        "label": "q",
+        "kind": 5,
+        "importPath": "Training.StackImplement",
+        "description": "Training.StackImplement",
+        "peekOfCode": "q = deque(size=10)\nfor i in range(11):\n    q.enqueue(random.random())\n    print(q)\nprint([q.popleft() for i in range(5)])",
+        "detail": "Training.StackImplement",
         "documentation": {}
     },
     {

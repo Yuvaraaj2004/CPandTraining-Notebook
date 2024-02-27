@@ -4,5 +4,6 @@
     "editor.stickyScroll.scrollWithEditor": true,
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "modificationsIfAvailable",
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "python.analysis.typeCheckingMode": "off",
 }

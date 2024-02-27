@@ -1,0 +1,65 @@
+[
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "ceil",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "floor",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sqrt",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "1923A",
+        "description": "1923A",
+        "peekOfCode": "t = int(input())\nfor t in range(t):\n    n = int(input())\n    l = list(map(int, input().split()))\n    i, j = 0, n-1\n    while i < len(l) and l[i] == 0:\n        i += 1\n    while i < len(l) and l[i] == 1:\n        i += 1\n    print(sum(l[i:]))",
+        "detail": "1923A",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "1923B",
+        "description": "1923B",
+        "peekOfCode": "t = int(input())\nfor t in range(t):\n    n, k = map(int, input().split())\n    health=list(map(int,input))",
+        "detail": "1923B",
+        "documentation": {}
+    },
+    {
+        "label": {
+            "name": "",
+            "kind": 2,
+            "peekOfCode": "def  Check(mid):\n    return sum(i//mid for i in a)>=k\nl,r=1,sum(a)\nwhile r-l>1e-6:\n    mid=(l+r)/2\n    # print(l, r, mid, (v := Check(mid)))\n    if (v := Check(mid)):\n        l=mid\n    else:\n        r=mid"
+        },
+        "kind": 2,
+        "importPath": "283932B",
+        "description": "283932B",
+        "peekOfCode": "def  Check(mid):\n    return sum(i//mid for i in a)>=k\nl,r=1,sum(a)\nwhile r-l>1e-6:\n    mid=(l+r)/2\n    # print(l, r, mid, (v := Check(mid)))\n    if (v := Check(mid)):\n        l=mid\n    else:\n        r=mid",
+        "detail": "283932B",
+        "documentation": {}
+    }
+]
