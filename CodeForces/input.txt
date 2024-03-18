@@ -1,0 +1,27 @@
+3
+4
+W1 QuantumFlowVRHeadset SSDDrive Mouse Pendrive
+W2 QuantumFlowVRHeadset AppleWatch
+W3 Iphone12 MacbookAir
+W4 Iphone12 Iphone13
+0 20 2 5
+20 0 8 13
+2 8 0 8
+5 13 8 0
+Iphone12 IphoneAdapter
+3    
+W1 Iphone12 Iphone13 Iphone14 Pixel7a
+W2 IphoneAdapter AppleWatch
+W3 Iphone12 IphoneAdapter Iphone13
+0 3 17
+3 0 25
+17 25 0
+Iphone12 IphoneAdapter
+3
+W1 Iphone12 Iphone13 Iphone14 Pixel7a
+W2 IphoneAdapter AppleWatch
+W3 Iphone12 IphoneAdapter Iphone13
+0 3 17
+3 0 25
+17 25 0
+IphoneAdapter Iphone12

@@ -1,0 +1,9 @@
+Fastest Product Not Available
+Cheapest Product Not Available
+
+def main():
+    
+
+
+if __name__ == "__main__":
+    main()

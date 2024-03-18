@@ -8,6 +8,86 @@
         "documentation": {}
     },
     {
+        "label": "defaultdict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "defaultdict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
+        "isExtraImport": true,
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
+        "label": "cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "bisect_right",
+        "importPath": "bisect",
+        "description": "bisect",
+        "isExtraImport": true,
+        "detail": "bisect",
+        "documentation": {}
+    },
+    {
         "label": "ceil",
         "importPath": "math",
         "description": "math",
@@ -32,6 +112,84 @@
         "documentation": {}
     },
     {
+        "label": "ceil",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "ceil",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "ceil",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "1846B",
+        "description": "1846B",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        l, f = [input() for i in range(3)], 0\n        for i in range(3):\n            d = defaultdict(int)\n            for j in range(3):\n                d[l[i][j]] += 1\n            # print(d)\n            if len(d) == 1:\n                if (v := list(d.items())[0][0]) != '.':",
+        "detail": "1846B",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "1846C",
+        "description": "1846C",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        a, b, c = list(map(int, input().split()))\n        l = [sorted(map(int, input().split())) for i in range(a)]\n        ans = []\n        for ind, i in enumerate(l):\n            s, p, j = 0, 0, 0\n            while j < len(i) and s+i[j] <= c:\n                s += i[j]\n                p += s",
+        "detail": "1846C",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "1846D",
+        "description": "1846D",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        a, b, c = list(map(int, input().split()))\n        b /= 2\n        l = [float('inf')]+sorted(map(int,\n                                      input().split()), reverse=True)\n        ans, base, m = 0, b*c, c/(b)\n        print(base, m, l)\n        for j in range(1, len(l)):\n            diff = l[j-1] - l[j]",
+        "detail": "1846D",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 2,
+        "importPath": "1846E1",
+        "description": "1846E1",
+        "peekOfCode": "def f(n, i):\n    if n == 0:\n        return ''\n    return f(n//i, i)+str(n % i)\nl, s = [], set()\nfor i in range(2, 36):\n    x, v = f'{i-1}{i-1}', 1\n    l.append([])\n    while v < 10**6:\n        x += f\"{i-1}\"",
+        "detail": "1846E1",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "1846E1",
+        "description": "1846E1",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        n = int(input())\n        # print(n, [(i, f(n, i)) for i in range(2, n)])\nif __name__ == \"__main__\":\n    main()",
+        "detail": "1846E1",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "1921D",
+        "description": "1921D",
+        "peekOfCode": "t = int(input())\nfor t in range(t):\n    ans = 0\n    a, b = map(int, input().split())\n    l1, l2 = sorted(list(map(int, input().split()))), sorted(\n        list(map(int, input().split())))\n    # print(l1, l2)\n    ai, aj, bi, bj = 0, a-1, 0, b-1\n    while ai <= aj:\n        v = [abs(l1[ai]-l2[bj]), abs(l1[aj]-l2[bi])]",
+        "detail": "1921D",
+        "documentation": {}
+    },
+    {
         "label": "t",
         "kind": 5,
         "importPath": "1923A",
@@ -50,6 +208,69 @@
         "documentation": {}
     },
     {
+        "label": "mask",
+        "kind": 5,
+        "importPath": "1926D",
+        "description": "1926D",
+        "peekOfCode": "mask = (1 << 31)-1\nfor i in range(int(input())):\n    n = int(input())\n    c = list(map(int, input().split()))\n    # print(mask)\n    ans = 0\n    s = {}\n    for j in c:\n        if s.get(mask ^ j, 0) > 0:\n            s[mask ^ j] -= 1",
+        "detail": "1926D",
+        "documentation": {}
+    },
+    {
+        "label": "coin",
+        "kind": 2,
+        "importPath": "1934B",
+        "description": "1934B",
+        "peekOfCode": "def coin(n):\n    # print(n, end=' ')\n    if n < 3:\n        return n\n    if n in v:\n        return v[n]\n    ans = n\n    for i in coins:\n        # for i in coins:\n        if i > n:",
+        "detail": "1934B",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "1934B",
+        "description": "1934B",
+        "peekOfCode": "d = {}\ncoins = [15, 10, 6, 3]\ncoins.reverse()\n# def dp(n):\n#     print(n, end=' ')\n#     if n <= 2:\n#         return n\n#     elif d.get(n, -1) != -1:\n#         return d[n]\n#     else:",
+        "detail": "1934B",
+        "documentation": {}
+    },
+    {
+        "label": "coins",
+        "kind": 5,
+        "importPath": "1934B",
+        "description": "1934B",
+        "peekOfCode": "coins = [15, 10, 6, 3]\ncoins.reverse()\n# def dp(n):\n#     print(n, end=' ')\n#     if n <= 2:\n#         return n\n#     elif d.get(n, -1) != -1:\n#         return d[n]\n#     else:\n#         ans = n",
+        "detail": "1934B",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "1935A",
+        "description": "1935A",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        n = int(input())\n        s = input()\n        if s <= s[::-1]:\n            print(s if not (n & 1) else s+s[::-1])\n        else:\n            print(s[::-1] if (n & 1) else s[::-1]+s)\n            # print()\nif __name__ == \"__main__\":",
+        "detail": "1935A",
+        "documentation": {}
+    },
+    {
+        "label": "Solve",
+        "kind": 2,
+        "importPath": "1941A",
+        "description": "1941A",
+        "peekOfCode": "def Solve():\n    n, m, c = list(map(int, input().split()))\n    a, b = sorted(map(int, input().split())), sorted(map(int, input().split()))\n    ans = 0\n    for i in range(n):\n        if a[i] > c:\n            break\n        else:\n            ans += bisect_right(b, c-a[i])\n    print(ans)",
+        "detail": "1941A",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "1941B",
+        "description": "1941B",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        n = int(input())\n        l = list(map(int, input().split()))\nif __name__ == \"__main__\":\n    main()",
+        "detail": "1941B",
+        "documentation": {}
+    },
+    {
         "label": {
             "name": "",
             "kind": 2,
@@ -60,6 +281,78 @@
         "description": "283932B",
         "peekOfCode": "def  Check(mid):\n    return sum(i//mid for i in a)>=k\nl,r=1,sum(a)\nwhile r-l>1e-6:\n    mid=(l+r)/2\n    # print(l, r, mid, (v := Check(mid)))\n    if (v := Check(mid)):\n        l=mid\n    else:\n        r=mid",
         "detail": "283932B",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Binary_Parity",
+        "description": "Binary_Parity",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        n = int(input())\n        c = 0\n        while n:\n            c, n = c+n & 1, n >> 1\n        print('EVEN' if c & 1 == 0 else 'ODD')\nif __name__ == \"__main__\":\n    main()",
+        "detail": "Binary_Parity",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Cricket_Tournament",
+        "description": "Cricket_Tournament",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        a, b = list(map(int, input().split()))\n        c = 0\n        while a != 1:\n            # print(a)\n            c += a//2\n            a = (a >> 1)+(a != 1 and a & 1)\n        print('YES' if c >= b else 'NO')\nif __name__ == \"__main__\":",
+        "detail": "Cricket_Tournament",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Make_It_One",
+        "description": "Make_It_One",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        a, b = list(map(int, input().split()))\n        # d = defaultdict(set)\n        # for i in range(a, b+1):\n        #     j, v = 2, i\n        #     while j*j <= i:\n        #         if i % j == 0:\n        #             d[j].add(v)\n        #         while i % j == 0:",
+        "detail": "Make_It_One",
+        "documentation": {}
+    },
+    {
+        "label": "l",
+        "kind": 5,
+        "importPath": "MCM",
+        "description": "MCM",
+        "peekOfCode": "l = '''2\n2\n18 19\n3\n40 60 20\n'''.split('\\n')\nfor i in range(int(l.pop(0))):\n    n = int(l.pop(0))\n    mat = list(map(int, l.pop(0).split()))\n    @cache",
+        "detail": "MCM",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Odd_Sum",
+        "description": "Odd_Sum",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        n = (int(input())-2)\n        print(1+(n*(n+1)))\nif __name__ == \"__main__\":\n    main()\n# 1 3 5 2 0\n# 1\n# 1 0\n# 1 2 0",
+        "detail": "Odd_Sum",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "Punched Cards",
+        "description": "Punched Cards",
+        "peekOfCode": "t = int(input())\nfor t in range(1, t+1):\n    print(f\"Case #{t}:\")\n    a,b=map(int,input().split())\n    for i in range(2*a+1):\n        s=''\n        if i==0 or i==1:\n            s+='..'\n        s+=('+-' if i%2==0 else '|.')*(b-len(s)//2)+('+' if i%2==0 else '|')\n        print(s)",
+        "detail": "Punched Cards",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Swap_and_Unite",
+        "description": "Swap_and_Unite",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        s = input()\n        d = Counter(s)\n        ans = float('inf')\n        for i in d:\n            c, l = 0, 0\n            for ind, j in enumerate(s):\n                if j == i:\n                    c += 1",
+        "detail": "Swap_and_Unite",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Table_Strength",
+        "description": "Table_Strength",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        n = int(input())\n        l = sorted((map(int, input().split())))\n        ans, mn = 0, float('inf')\n        for j in range(n-1, -1, -1):\n            mn = min(l[j], mn)\n            ans = max(ans, mn*(n-j))\n        print(ans)\nif __name__ == \"__main__\":",
+        "detail": "Table_Strength",
         "documentation": {}
     }
 ]
