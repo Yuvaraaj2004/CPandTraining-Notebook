@@ -64,6 +64,14 @@
         "documentation": {}
     },
     {
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
+        "isExtraImport": true,
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
         "label": "cache",
         "importPath": "functools",
         "description": "functools",
@@ -85,6 +93,30 @@
         "description": "bisect",
         "isExtraImport": true,
         "detail": "bisect",
+        "documentation": {}
+    },
+    {
+        "label": "bisect_left",
+        "importPath": "bisect",
+        "description": "bisect",
+        "isExtraImport": true,
+        "detail": "bisect",
+        "documentation": {}
+    },
+    {
+        "label": "bisect_right",
+        "importPath": "bisect",
+        "description": "bisect",
+        "isExtraImport": true,
+        "detail": "bisect",
+        "documentation": {}
+    },
+    {
+        "label": "ceil",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
         "documentation": {}
     },
     {
@@ -133,6 +165,30 @@
         "description": "math",
         "isExtraImport": true,
         "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "SortedDict",
+        "importPath": "sortedcontainers",
+        "description": "sortedcontainers",
+        "isExtraImport": true,
+        "detail": "sortedcontainers",
+        "documentation": {}
+    },
+    {
+        "label": "SortedDict",
+        "importPath": "sortedcontainers",
+        "description": "sortedcontainers",
+        "isExtraImport": true,
+        "detail": "sortedcontainers",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
         "documentation": {}
     },
     {
@@ -262,12 +318,66 @@
         "documentation": {}
     },
     {
+        "label": "f",
+        "kind": 2,
+        "importPath": "1941B",
+        "description": "1941B",
+        "peekOfCode": "def f(n, l):\n    for i in range(n-2, -2, -1):\n        if i-1 >= 0:\n            l[i-1] -= (l[i])//2\n            if l[i-1] < 0:\n                return False\n        if i+1 < n:\n            l[i+1] -= (l[i])//2\n            if l[i+1] < 0:\n                return False",
+        "detail": "1941B",
+        "documentation": {}
+    },
+    {
         "label": "main",
         "kind": 2,
         "importPath": "1941B",
         "description": "1941B",
-        "peekOfCode": "def main():\n    for i in range(int(input())):\n        n = int(input())\n        l = list(map(int, input().split()))\nif __name__ == \"__main__\":\n    main()",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        n = int(input())\n        l = list(map(int, input().split()))\n        print('YES' if f(n, l[::]) or f(n, l[::-1]) else 'NO')\nif __name__ == \"__main__\":\n    main()",
         "detail": "1941B",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "1945A",
+        "description": "1945A",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        a, b, c = list(map(int, input().split()))\n        if b % 3 != 0:\n            mod = b % 3\n            b += 3-mod\n            c -= 3-mod\n        # print(a, b, c)\n        print(a+ceil((b+c)/3) if c >= 0 else -1)\nif __name__ == \"__main__\":",
+        "detail": "1945A",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "1946A",
+        "description": "1946A",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        n = int(input())\n        l = sorted((map(int, input().split())))\n        if n == 1:\n            print(1)\n        else:\n            c = 0\n            for i in range(n//2-(n & 1 == 0), n):\n                if l[i] == l[n//2-(n & 1 == 0)]:",
+        "detail": "1946A",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "1946B",
+        "description": "1946B",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        n, k = list(map(int, input().split()))\n        l = list(map(int, input().split()))\n        s, mx = 0, 0\n        for i in range(n):\n            s += l[i]\n            if s < 0:\n                s = 0\n            mx = max(mx, s)",
+        "detail": "1946B",
+        "documentation": {}
+    },
+    {
+        "label": "mod",
+        "kind": 5,
+        "importPath": "1946B",
+        "description": "1946B",
+        "peekOfCode": "mod = 10**9+7\ndef main():\n    for i in range(int(input())):\n        n, k = list(map(int, input().split()))\n        l = list(map(int, input().split()))\n        s, mx = 0, 0\n        for i in range(n):\n            s += l[i]\n            if s < 0:\n                s = 0",
+        "detail": "1946B",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "1946C",
+        "description": "1946C",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        n, k = list(map(int, input().split()))\n        edges = [[] for i in range(n+1)]\n        for i in range(n):\n            x, y = list(map(int, input().split()))\n            edges[x].append(y)\n        def dfs(node=1):\n            sz = 1\n            for i in edges[node]:",
+        "detail": "1946C",
         "documentation": {}
     },
     {
@@ -304,6 +414,24 @@
     {
         "label": "main",
         "kind": 2,
+        "importPath": "Dice_Game_3",
+        "description": "Dice_Game_3",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        n = int(input())\n        print(13*(n//2)+(6 if n & 1 else 0))\nif __name__ == \"__main__\":\n    main()",
+        "detail": "Dice_Game_3",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "LongestCommonSuffix",
+        "description": "LongestCommonSuffix",
+        "peekOfCode": "class Solution:\n    def stringIndices(self, C: List[str], Q: List[str]) -> List[int]:\n        d = [{}, 0]\n        for ind, i in enumerate(C):\n            root = d\n            for j in i[::-1]+' ':\n                if j not in root[0]:\n                    root[0][j] = [{}, ind]\n                else:\n                    if len(C[root[1]]) > len(i):",
+        "detail": "LongestCommonSuffix",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
         "importPath": "Make_It_One",
         "description": "Make_It_One",
         "peekOfCode": "def main():\n    for i in range(int(input())):\n        a, b = list(map(int, input().split()))\n        # d = defaultdict(set)\n        # for i in range(a, b+1):\n        #     j, v = 2, i\n        #     while j*j <= i:\n        #         if i % j == 0:\n        #             d[j].add(v)\n        #         while i % j == 0:",
@@ -335,6 +463,24 @@
         "description": "Punched Cards",
         "peekOfCode": "t = int(input())\nfor t in range(1, t+1):\n    print(f\"Case #{t}:\")\n    a,b=map(int,input().split())\n    for i in range(2*a+1):\n        s=''\n        if i==0 or i==1:\n            s+='..'\n        s+=('+-' if i%2==0 else '|.')*(b-len(s)//2)+('+' if i%2==0 else '|')\n        print(s)",
         "detail": "Punched Cards",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Sale",
+        "description": "Sale",
+        "peekOfCode": "def main():\nif __name__ == \"__main__\":\n    main()",
+        "detail": "Sale",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 2,
+        "importPath": "Superincreasing",
+        "description": "Superincreasing",
+        "peekOfCode": "def f(n):\n    global l, fib, s\n    for i in range(l, n+1):\n        fib[i] = (s+1)\n        s += fib[i]\n        l += 1\n    print(fib[:n+1])\n    return fib[n-1]\nl, fib, s = 1, [1]+[0]*10**5, 1\nfor t in range(int(input())):",
+        "detail": "Superincreasing",
         "documentation": {}
     },
     {

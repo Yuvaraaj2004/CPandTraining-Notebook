@@ -57,6 +57,14 @@
         "documentation": {}
     },
     {
+        "label": "ceil",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
         "label": "floor",
         "importPath": "math",
         "description": "math",
@@ -114,6 +122,14 @@
     },
     {
         "label": "DefaultDict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -233,11 +249,51 @@
         "documentation": {}
     },
     {
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
+        "isExtraImport": true,
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
         "label": "bisect_right",
         "importPath": "bisect",
         "description": "bisect",
         "isExtraImport": true,
         "detail": "bisect",
+        "documentation": {}
+    },
+    {
+        "label": "bisect_left",
+        "importPath": "bisect",
+        "description": "bisect",
+        "isExtraImport": true,
+        "detail": "bisect",
+        "documentation": {}
+    },
+    {
+        "label": "bisect_right",
+        "importPath": "bisect",
+        "description": "bisect",
+        "isExtraImport": true,
+        "detail": "bisect",
+        "documentation": {}
+    },
+    {
+        "label": "SortedDict",
+        "importPath": "sortedcontainers",
+        "description": "sortedcontainers",
+        "isExtraImport": true,
+        "detail": "sortedcontainers",
+        "documentation": {}
+    },
+    {
+        "label": "SortedDict",
+        "importPath": "sortedcontainers",
+        "description": "sortedcontainers",
+        "isExtraImport": true,
+        "detail": "sortedcontainers",
         "documentation": {}
     },
     {
@@ -731,12 +787,66 @@
         "documentation": {}
     },
     {
+        "label": "f",
+        "kind": 2,
+        "importPath": "CodeForces.Contest927.1941B",
+        "description": "CodeForces.Contest927.1941B",
+        "peekOfCode": "def f(n, l):\n    for i in range(n-2, -2, -1):\n        if i-1 >= 0:\n            l[i-1] -= (l[i])//2\n            if l[i-1] < 0:\n                return False\n        if i+1 < n:\n            l[i+1] -= (l[i])//2\n            if l[i+1] < 0:\n                return False",
+        "detail": "CodeForces.Contest927.1941B",
+        "documentation": {}
+    },
+    {
         "label": "main",
         "kind": 2,
         "importPath": "CodeForces.Contest927.1941B",
         "description": "CodeForces.Contest927.1941B",
-        "peekOfCode": "def main():\n    for i in range(int(input())):\n        n = int(input())\n        l = list(map(int, input().split()))\nif __name__ == \"__main__\":\n    main()",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        n = int(input())\n        l = list(map(int, input().split()))\n        print('YES' if f(n, l[::]) or f(n, l[::-1]) else 'NO')\nif __name__ == \"__main__\":\n    main()",
         "detail": "CodeForces.Contest927.1941B",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "CodeForces.Contest927.1945A",
+        "description": "CodeForces.Contest927.1945A",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        a, b, c = list(map(int, input().split()))\n        if b % 3 != 0:\n            mod = b % 3\n            b += 3-mod\n            c -= 3-mod\n        # print(a, b, c)\n        print(a+ceil((b+c)/3) if c >= 0 else -1)\nif __name__ == \"__main__\":",
+        "detail": "CodeForces.Contest927.1945A",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "CodeForces.Contest927.1946A",
+        "description": "CodeForces.Contest927.1946A",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        n = int(input())\n        l = sorted((map(int, input().split())))\n        if n == 1:\n            print(1)\n        else:\n            c = 0\n            for i in range(n//2-(n & 1 == 0), n):\n                if l[i] == l[n//2-(n & 1 == 0)]:",
+        "detail": "CodeForces.Contest927.1946A",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "CodeForces.Contest927.1946B",
+        "description": "CodeForces.Contest927.1946B",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        n, k = list(map(int, input().split()))\n        l = list(map(int, input().split()))\n        s, mx = 0, 0\n        for i in range(n):\n            s += l[i]\n            if s < 0:\n                s = 0\n            mx = max(mx, s)",
+        "detail": "CodeForces.Contest927.1946B",
+        "documentation": {}
+    },
+    {
+        "label": "mod",
+        "kind": 5,
+        "importPath": "CodeForces.Contest927.1946B",
+        "description": "CodeForces.Contest927.1946B",
+        "peekOfCode": "mod = 10**9+7\ndef main():\n    for i in range(int(input())):\n        n, k = list(map(int, input().split()))\n        l = list(map(int, input().split()))\n        s, mx = 0, 0\n        for i in range(n):\n            s += l[i]\n            if s < 0:\n                s = 0",
+        "detail": "CodeForces.Contest927.1946B",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "CodeForces.Contest927.1946C",
+        "description": "CodeForces.Contest927.1946C",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        n, k = list(map(int, input().split()))\n        edges = [[] for i in range(n+1)]\n        for i in range(n):\n            x, y = list(map(int, input().split()))\n            edges[x].append(y)\n        def dfs(node=1):\n            sz = 1\n            for i in edges[node]:",
+        "detail": "CodeForces.Contest927.1946C",
         "documentation": {}
     },
     {
@@ -773,6 +883,24 @@
     {
         "label": "main",
         "kind": 2,
+        "importPath": "CodeForces.Contest927.Dice_Game_3",
+        "description": "CodeForces.Contest927.Dice_Game_3",
+        "peekOfCode": "def main():\n    for i in range(int(input())):\n        n = int(input())\n        print(13*(n//2)+(6 if n & 1 else 0))\nif __name__ == \"__main__\":\n    main()",
+        "detail": "CodeForces.Contest927.Dice_Game_3",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "CodeForces.Contest927.LongestCommonSuffix",
+        "description": "CodeForces.Contest927.LongestCommonSuffix",
+        "peekOfCode": "class Solution:\n    def stringIndices(self, C: List[str], Q: List[str]) -> List[int]:\n        d = [{}, 0]\n        for ind, i in enumerate(C):\n            root = d\n            for j in i[::-1]+' ':\n                if j not in root[0]:\n                    root[0][j] = [{}, ind]\n                else:\n                    if len(C[root[1]]) > len(i):",
+        "detail": "CodeForces.Contest927.LongestCommonSuffix",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
         "importPath": "CodeForces.Contest927.Make_It_One",
         "description": "CodeForces.Contest927.Make_It_One",
         "peekOfCode": "def main():\n    for i in range(int(input())):\n        a, b = list(map(int, input().split()))\n        # d = defaultdict(set)\n        # for i in range(a, b+1):\n        #     j, v = 2, i\n        #     while j*j <= i:\n        #         if i % j == 0:\n        #             d[j].add(v)\n        #         while i % j == 0:",
@@ -804,6 +932,24 @@
         "description": "CodeForces.Contest927.Punched Cards",
         "peekOfCode": "t = int(input())\nfor t in range(1, t+1):\n    print(f\"Case #{t}:\")\n    a,b=map(int,input().split())\n    for i in range(2*a+1):\n        s=''\n        if i==0 or i==1:\n            s+='..'\n        s+=('+-' if i%2==0 else '|.')*(b-len(s)//2)+('+' if i%2==0 else '|')\n        print(s)",
         "detail": "CodeForces.Contest927.Punched Cards",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "CodeForces.Contest927.Sale",
+        "description": "CodeForces.Contest927.Sale",
+        "peekOfCode": "def main():\nif __name__ == \"__main__\":\n    main()",
+        "detail": "CodeForces.Contest927.Sale",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 2,
+        "importPath": "CodeForces.Contest927.Superincreasing",
+        "description": "CodeForces.Contest927.Superincreasing",
+        "peekOfCode": "def f(n):\n    global l, fib, s\n    for i in range(l, n+1):\n        fib[i] = (s+1)\n        s += fib[i]\n        l += 1\n    print(fib[:n+1])\n    return fib[n-1]\nl, fib, s = 1, [1]+[0]*10**5, 1\nfor t in range(int(input())):",
+        "detail": "CodeForces.Contest927.Superincreasing",
         "documentation": {}
     },
     {
@@ -876,6 +1022,33 @@
         "description": "Heart Disease Prediction with Logistic Regression.Main",
         "peekOfCode": "cm = confusion_matrix(y_test, y_pred)\nplt.figure(figsize=(8, 6))\nsns.heatmap(cm, annot=True, fmt='d', cmap='Blues', cbar=False)\nplt.xlabel('Predicted')\nplt.ylabel('True')\nplt.title('Confusion Matrix')\nplt.savefig(\"ConfusionMatrix.png\")\n# d. Report performance metrics with two decimal points\n#Fill your code here\nprint(f'Accuracy: {accuracy:.2f}')",
         "detail": "Heart Disease Prediction with Logistic Regression.Main",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "Leetcode.2444-count-subarrays-with-fixed-bounds",
+        "description": "Leetcode.2444-count-subarrays-with-fixed-bounds",
+        "peekOfCode": "class Solution:\n    def countSubarrays(self, nums: List[int], minK: int, maxK: int) -> int:\n        badindex = left = right = -1\n        ans = 0\n        for ind, i in enumerate(nums):\n            if not minK <= i <= maxK:\n                badindex = ind\n            elif i == minK:\n                left = ind\n            elif i == maxK:",
+        "detail": "Leetcode.2444-count-subarrays-with-fixed-bounds",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "Leetcode.354-russian-doll-envelopes",
+        "description": "Leetcode.354-russian-doll-envelopes",
+        "peekOfCode": "class Solution:\n    def maxEnvelopes(self, envelopes: List[List[int]]) -> int:",
+        "detail": "Leetcode.354-russian-doll-envelopes",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "Leetcode.992-subarrays-with-k-different-integers",
+        "description": "Leetcode.992-subarrays-with-k-different-integers",
+        "peekOfCode": "class Solution:\n    def subarraysWithKDistinct(self, nums: List[int], k: int) -> int:\n        def f(k):\n            d, l, ans = {}, 0, 0\n            for ind, i in enumerate(nums):\n                d[i] = d.get(i, 0)+1\n                while len(d) > k:\n                    d[nums[l]] -= 1\n                    if d[nums[l]] == 0:\n                        del d[nums[l]]",
+        "detail": "Leetcode.992-subarrays-with-k-different-integers",
         "documentation": {}
     },
     {
