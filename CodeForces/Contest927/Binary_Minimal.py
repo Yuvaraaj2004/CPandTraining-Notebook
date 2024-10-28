@@ -1,14 +1,22 @@
-for t in range(int(input())):
-    x, y = list(map(int, input().split()))
-    s = list(input())
-    i = 0
-    while i < len(s) and y:
-        if y and s[i] == '1':
-            s.pop(i)
-            y -= 1
-        else:
-            i += 1
-    while y:
+cp
+
+
+def Solve():
+    a, b = GetL()
+    s = list(GetS())
+
+    rem = set()
+    for ind, i in enumerate(s):
+        if i == '1' and b:
+            rem.add(ind)
+            b -= 1
+    s = [i for ind, i in enumerate(s) if ind not in rem]
+    while b:
         s.pop()
-        y -= 1
-    print(''.join(s[:]))
+        b -= 1
+    print(''.join(s))
+
+
+if __name__ == "__main__":
+    for i in range(int(input())):
+        Solve()
